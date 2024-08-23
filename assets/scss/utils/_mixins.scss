@@ -1,9 +1,9 @@
 // bg color
-@mixin bg-color($color, $opacity) {
+@mixin xw-background-color($color, $opacity) {
   background: rgba($color, $opacity);
 }
 
-@mixin tp-afbf(
+@mixin xw-afcommon(
   $style: "default",
   $content: "",
   $top: 50%,
@@ -13,7 +13,7 @@
   $y: -50%,
   $height: 12px,
   $width: 1px,
-  $bg-color: var(--xw--common-black)
+  $xw-background-color: var(--xw--common-black)
 ) {
   @if ($style == "center") {
     $top: 50%;
@@ -29,7 +29,7 @@
     width: $width;
     height: $height;
     @include transform(translate($x, $y));
-    background-color: $bg-color;
+    background-color: $xw-background-color;
   } @else if($style == "full") {
     $top: 0%;
     $left: 0%;
@@ -46,7 +46,7 @@
     width: $width;
     height: $height;
     @include transform(translate($x, $y));
-    background-color: $bg-color;
+    background-color: $xw-background-color;
   } @else {
     position: absolute;
     content: $content;
@@ -56,7 +56,7 @@
     width: $width;
     height: $height;
     @include transform(translate($x, $y));
-    background-color: $bg-color;
+    background-color: $xw-background-color;
   }
 }
 
@@ -86,32 +86,32 @@
 }
 
 // filter
-@mixin filter($value) {
-  -webkit-filter: $value;
-  filter: $value;
+@mixin filter($xw-value) {
+  -webkit-filter: $xw-value;
+  filter: $xw-value;
 }
 
 // appearance for select
-@mixin appearance($value) {
-  -webkit-appearance: $value;
-  -moz-appearance: $value;
-  -ms-appearance: $value;
-  -o-appearance: $value;
-  appearance: $value;
+@mixin appearance($xw-value) {
+  -webkit-appearance: $xw-value;
+  -moz-appearance: $xw-value;
+  -ms-appearance: $xw-value;
+  -o-appearance: $xw-value;
+  appearance: $xw-value;
 }
 
 // keyframes
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
+@mixin keyframes($xw-name) {
+  @-webkit-keyframes #{$xw-name} {
     @content;
   }
-  @-moz-keyframes #{$name} {
+  @-moz-keyframes #{$xw-name} {
     @content;
   }
-  @-ms-keyframes #{$name} {
+  @-ms-keyframes #{$xw-name} {
     @content;
   }
-  @keyframes #{$name} {
+  @keyframes #{$xw-name} {
     @content;
   }
 }

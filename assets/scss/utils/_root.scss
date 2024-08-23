@@ -5,18 +5,18 @@
   /**
     @font family declaration
     */
-  @each $ff, $shades in $font-family {
-    @each $shade, $value in $shades {
-      --xw--#{$ff}-#{$shade}: #{$value};
+  @each $xw-ff, $xw-shades in $font-family {
+    @each $xw-shade, $xw-value in $xw-shades {
+      --xw--#{$xw-ff}-#{$xw-shade}: #{$xw-value};
     }
   }
 
   /**
     @color declaration
     */
-  @each $color, $shades in $colors {
-    @each $shade, $value in $shades {
-      --xw--#{$color}-#{$shade}: #{$value};
+  @each $color, $xw-shades in $colors {
+    @each $xw-shade, $xw-value in $xw-shades {
+      --xw--#{$color}-#{$xw-shade}: #{$xw-value};
     }
   }
 
@@ -24,9 +24,9 @@
     @font weight declaration
     */
 
-  @each $fw, $shades in $font-scale {
-    @each $shade, $value in $shades {
-      --xw--#{$fw}-#{$shade}: #{$value};
+  @each $xw-fw, $xw-shades in $font-scale {
+    @each $xw-shade, $xw-value in $xw-shades {
+      --xw--#{$xw-fw}-#{$xw-shade}: #{$xw-value};
     }
   }
 
@@ -34,9 +34,9 @@
     @font size declaration
     */
 
-  @each $fz, $shades in $font-size {
-    @each $shade, $value in $shades {
-      --xw--#{$fz}-#{$shade}: #{$value};
+  @each $xw-fz, $xw-shades in $font-size {
+    @each $xw-shade, $xw-value in $xw-shades {
+      --xw--#{$xw-fz}-#{$xw-shade}: #{$xw-value};
     }
   }
 }

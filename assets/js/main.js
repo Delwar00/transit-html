@@ -86,8 +86,8 @@
 		$(this).css("width", $(this).attr("data-width"));
 	});
 
-	$("[data-bg-color]").each(function () {
-        $(this).css("background-color", $(this).attr("data-bg-color"));
+	$("[data-xw-background-color]").each(function () {
+        $(this).css("background-color", $(this).attr("data-xw-background-color"));
     });
 
 	////////////////////////////////////////////////////

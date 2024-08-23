@@ -407,19 +407,19 @@ input[type="color"] {
 /*--
     - Background color
 -----------------------------------------*/
-.grey-bg {
+.grey-background {
   background: var(--xw-grey-1);
 }
 
-.grey-bg-2 {
+.grey-background-2 {
   background: var(--xw-grey-2);
 }
 
-.white-bg {
+.white-background {
   background: var(--xw-common-white);
 }
 
-.black-bg {
+.black-background {
   background: var(--xw-common-black);
 }
 
