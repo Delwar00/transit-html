@@ -1,4 +1,4 @@
-// bg color
+// Declare background color
 @mixin xw-background-color($color, $opacity) {
   background: rgba($color, $opacity);
 }
@@ -60,7 +60,7 @@
   }
 }
 
-// placeholder input
+// Declare placeholder input
 @mixin tp-placeholder {
   &::-webkit-input-placeholder {
     @content;
@@ -76,7 +76,7 @@
   }
 }
 
-// animate
+// Declare animate
 @mixin animate($animation, $duration, $repeat, $easing) {
   -webkit-animation: $animation $duration $repeat $easing;
   -moz-animation: $animation $duration $repeat $easing;
@@ -85,13 +85,13 @@
   animation: $animation $duration $repeat $easing;
 }
 
-// filter
+// Declare filter
 @mixin filter($xw-value) {
   -webkit-filter: $xw-value;
   filter: $xw-value;
 }
 
-// appearance for select
+// Declare appearance for select
 @mixin appearance($xw-value) {
   -webkit-appearance: $xw-value;
   -moz-appearance: $xw-value;
@@ -100,7 +100,7 @@
   appearance: $xw-value;
 }
 
-// keyframes
+// Declare keyframes
 @mixin keyframes($xw-name) {
   @-webkit-keyframes #{$xw-name} {
     @content;
@@ -116,14 +116,14 @@
   }
 }
 
-//backgroud
+// Declare backgroud
 @mixin background {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-//transition
+// Declare transition
 @mixin transition($time) {
   -webkit-transition: all $time ease-out 0s;
   -moz-transition: all $time ease-out 0s;
@@ -132,7 +132,7 @@
   transition: all $time ease-out 0s;
 }
 
-// transform
+// Declare transform
 @mixin transform($transforms) {
   -webkit-transform: $transforms;
   -moz-transform: $transforms;
@@ -141,7 +141,7 @@
   transform: $transforms;
 }
 
-//border
+// Declare border
 @mixin border-radius($man) {
   -webkit-border-radius: $man;
   -moz-border-radius: $man;
@@ -150,7 +150,7 @@
   border-radius: $man;
 }
 
-// sentence case
+// Declare sentence case
 @mixin sentence-case() {
   text-transform: lowercase;
   &:first-letter {
@@ -158,7 +158,7 @@
   }
 }
 
-// Flexbox display
+// Declare Flexbox display
 @mixin flexbox() {
   display: -webkit-box;
   display: -moz-box;
@@ -167,7 +167,7 @@
   display: flex;
 }
 
-// Box shadows
+// Declare Box shadows
 @mixin box-shadow($shadow) {
   -webkit-box-shadow: $shadow;
   -moz-box-shadow: $shadow;

@@ -1,18 +1,18 @@
-// font url
+//Add font url
 
 $font-url: "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap";
 
-// font family
+// Declare font family
 $font-family: (
   xw-ff: (
     body: "'Roboto', sans-serif",
     heading: "'Roboto', sans-serif",
     p: "'Roboto', sans-serif",
-    fontawesome: '"Font Awesome 6 Pro"',
+    font-awesome: '"Font Awesome 6 Pro"',
   ),
 );
 
-// font weight
+// Declare font weight
 $font-scale: (
   xw-fw: (
     normal: normal,
@@ -27,7 +27,7 @@ $font-scale: (
   ),
 );
 
-// font size
+// Declare font size
 $font-size: (
   xw-fz: (
     body: 14px,

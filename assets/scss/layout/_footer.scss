@@ -3,22 +3,3 @@
 /*----------------------------------------*/
 /*  00. FOOTER CSS START
 /*----------------------------------------*/
-
-.footer {
-  &__widget {
-    &-title {
-      font-size: 22px;
-      color: var(--xw--common-black);
-      margin-bottom: 20px;
-    }
-    & ul {
-      & li {
-        list-style: none;
-        a {
-          font-size: 14px;
-          color: var(--xw--text-1);
-        }
-      }
-    }
-  }
-}
