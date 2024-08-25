@@ -1,42 +1,43 @@
-@use "colors" as *;
-@use "typography" as *;
+@use 'colors' as *;
+@use 'typography' as *;
 
 :root {
-  /**
+    /**
     @font family declaration
     */
-  @each $xw-ff, $xw-shades in $font-family {
-    @each $xw-shade, $xw-value in $xw-shades {
-      --xw--#{$xw-ff}-#{$xw-shade}: #{$xw-value};
+    @each $ff, $shades in $font-family {
+        @each $shade, $value in $shades {
+            --tp-#{$ff}-#{$shade}: #{$value};
+        }
     }
-  }
 
-  /**
+    /**
     @color declaration
     */
-  @each $color, $xw-shades in $colors {
-    @each $xw-shade, $xw-value in $xw-shades {
-      --xw--#{$color}-#{$xw-shade}: #{$xw-value};
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --tp-#{$color}-#{$shade}: #{$value};
+        }
     }
-  }
 
-  /**
+
+    /**
     @font weight declaration
     */
-
-  @each $xw-fw, $xw-shades in $font-scale {
-    @each $xw-shade, $xw-value in $xw-shades {
-      --xw--#{$xw-fw}-#{$xw-shade}: #{$xw-value};
+    
+    @each $fw, $shades in $font-scale {
+        @each $shade, $value in $shades {
+            --tp-#{$fw}-#{$shade}: #{$value};
+        }
     }
-  }
 
-  /**
+    /**
     @font size declaration
     */
-
-  @each $xw-fz, $xw-shades in $font-size {
-    @each $xw-shade, $xw-value in $xw-shades {
-      --xw--#{$xw-fz}-#{$xw-shade}: #{$xw-value};
+    
+    @each $fz, $shades in $font-size {
+        @each $shade, $value in $shades {
+            --tp-#{$fz}-#{$shade}: #{$value};
+        }
     }
-  }
 }

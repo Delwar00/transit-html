@@ -18,7 +18,7 @@
 
 
 	// const colorInput = document.querySelector('input[type=color]');
-	// const colorVariable = '--xw--theme-1';
+	// const colorVariable = '--tp-theme-1';
 
 	// colorInput.addEventListener('change', function(e){
 	// 	var clr = e.target.value;
@@ -86,8 +86,8 @@
 		$(this).css("width", $(this).attr("data-width"));
 	});
 
-	$("[data-xw-background-color]").each(function () {
-        $(this).css("background-color", $(this).attr("data-xw-background-color"));
+	$("[data-bg-color]").each(function () {
+        $(this).css("background-color", $(this).attr("data-bg-color"));
     });
 
 	////////////////////////////////////////////////////
