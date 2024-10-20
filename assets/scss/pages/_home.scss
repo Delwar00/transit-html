@@ -1,0 +1,92 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  01. Home CSS START
+/*----------------------------------------*/
+.container {
+  max-width: 1289px !important;
+}
+
+.hero {
+  background: var(--tp-common-primary);
+  &__rightImage {
+    display: flex;
+    justify-content: end;
+    img {
+      position: absolute;
+      display: block;
+      width: 54%;
+      height: 90%;
+      object-fit: fill;
+      z-index: 1;
+    }
+  }
+
+  &__transit-info {
+    span.af-border {
+      color: var(--tp-common-white);
+      font-family: var(--tp-ff-heading);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 1.28px;
+      text-transform: uppercase;
+      position: relative;
+      &::after {
+        content: "";
+        width: 124px;
+        height: 1px;
+        background-color: var(--tp-common-orange);
+        position: absolute;
+        transform: translate(10px, 12px);
+      }
+    }
+    h3 {
+      color: var(--tp-common-white);
+      font-family: var(--tp-ff-heading);
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 86.4px;
+      letter-spacing: -1.44px;
+    }
+    p {
+      color: var(--tp-common-white);
+      font-family: var(--tp-ff-p);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: -0.36px;
+    }
+  }
+
+  .h_100vh {
+    height: 90vh;
+    align-items: center;
+  }
+
+  .hero__more-info__contact-info {
+    span {
+      font-size: 44px;
+      font-weight: normal;
+    }
+    .hero__contact-info {
+      span {
+        font-family: var(--tp-ff-body);
+        color: var(--tp-border-1);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.28px;
+        text-transform: capitalize;
+      }
+      h4 {
+        font-family: var(--tp-ff-heading);
+        color: var(--tp-common-white);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 1.28px;
+      }
+    }
+  }
+}
