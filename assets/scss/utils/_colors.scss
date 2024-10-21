@@ -2,22 +2,26 @@ $colors: (
   common: (
     white: #ffffff,
     black: #000,
+    orange: #ffc300,
+    primary: #003566,
   ),
   heading: (
-    primary: #000,
+    primary: #003566,
   ),
   grey: (
     1: #f1f1f1,
     2: #f5f6f8,
   ),
   text: (
-    body: #000,
-    1: #000,
+    body: #8d8d8d,
+    1: #8d8d8d,
   ),
   theme: (
-    1: #3d6ce7,
+    1: #003566,
   ),
   border: (
-    1: #000,
+    1: #cccccc,
+    2: #ffc300,
+    3: #ffffff,
   ),
 );
