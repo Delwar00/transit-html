@@ -1,22 +1,31 @@
 @use "../utils" as *;
 
 /* without bg button */
-
-.whbg-btn {
+.btn {
   font-family: var(--tp-ff-body);
-  color: var(--tp-common-white);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.14px;
-  border: 1px solid var(--tp-border-3);
   padding: 18px 23px 18px 23px;
   border-radius: 5px;
+  i {
+    margin-left: 5px;
+  }
+}
+.whbg-btn {
+  color: var(--tp-common-white);
+
+  border: 1px solid var(--tp-border-3);
   &:hover {
     color: var(--tp-common-orange);
     border: 1px solid var(--tp-border-2);
   }
-  i {
-    margin-left: 5px;
+}
+.wbg-btn {
+  background: var(--tp-common-orange);
+  color: var(--tp-common-primary);
+  &:hover {
+    color: var(--tp-common-white);
   }
 }
 
