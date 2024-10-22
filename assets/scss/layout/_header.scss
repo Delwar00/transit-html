@@ -3,3 +3,66 @@
 /*----------------------------------------*/
 /*  02. HEADER CSS START
 /*----------------------------------------*/
+
+.top-header {
+  background-color: #f0f3f6;
+  &__item {
+    .left-content {
+      ul {
+        li {
+          border-right: 1px solid var(--tp-border-1);
+          &:last-child {
+            border: none;
+          }
+          &:hover a {
+            color: var(--tp-common-orange);
+          }
+          a {
+            color: #272f40;
+            @extend %small-text-typo;
+            padding: 16px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .right-content {
+      ul {
+        li {
+          border-right: 1px solid var(--tp-border-1);
+          &:last-child {
+            border: none;
+          }
+          &:hover a {
+            color: var(--tp-common-orange);
+          }
+          a {
+            color: #272f40;
+            @extend %small-text-typo;
+            padding: 16px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header {
+  background: var(--tp-common-header-bg);
+  &__menu {
+    ul {
+      li {
+        margin-right: 32px;
+        &:hover a {
+          color: var(--tp-common-orange);
+        }
+        a {
+          padding: 32px 0;
+          color: var(--tp-common-white);
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

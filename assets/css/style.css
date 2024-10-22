@@ -21,6 +21,12 @@
 /*  01. THEME DEFAULT CSS START
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap");
+.top-header__item .left-content ul li a, .top-header__item .right-content ul li a {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.28px;
+}
+
 :root {
   /**
   @font family declaration
@@ -36,6 +42,7 @@
   --tp-common-black: #000;
   --tp-common-orange: #ffc300;
   --tp-common-primary: #003566;
+  --tp-common-header-bg: #00407a;
   --tp-heading-primary: #003566;
   --tp-grey-1: #f1f1f1;
   --tp-grey-2: #f5f6f8;
@@ -89,6 +96,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .ppqq {
@@ -413,22 +424,33 @@ input[type=color] {
     - Spacing
 -----------------------------------------*/
 /* without bg button */
-.whbg-btn {
+.btn {
   font-family: var(--tp-ff-body);
-  color: var(--tp-common-white);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.14px;
-  border: 1px solid var(--tp-border-3);
   padding: 18px 23px 18px 23px;
   border-radius: 5px;
+}
+.btn i {
+  margin-left: 5px;
+}
+
+.whbg-btn {
+  color: var(--tp-common-white);
+  border: 1px solid var(--tp-border-3);
 }
 .whbg-btn:hover {
   color: var(--tp-common-orange);
   border: 1px solid var(--tp-border-2);
 }
-.whbg-btn i {
-  margin-left: 5px;
+
+.wbg-btn {
+  background: var(--tp-common-orange);
+  color: var(--tp-common-primary);
+}
+.wbg-btn:hover {
+  color: var(--tp-common-white);
 }
 
 /* pulse btn */
@@ -859,6 +881,53 @@ input[type=color] {
 /*----------------------------------------*/
 /*  02. HEADER CSS START
 /*----------------------------------------*/
+.top-header {
+  background-color: #f0f3f6;
+}
+.top-header__item .left-content ul li {
+  border-right: 1px solid var(--tp-border-1);
+}
+.top-header__item .left-content ul li:last-child {
+  border: none;
+}
+.top-header__item .left-content ul li:hover a {
+  color: var(--tp-common-orange);
+}
+.top-header__item .left-content ul li a {
+  color: #272f40;
+  padding: 16px;
+  display: inline-block;
+}
+.top-header__item .right-content ul li {
+  border-right: 1px solid var(--tp-border-1);
+}
+.top-header__item .right-content ul li:last-child {
+  border: none;
+}
+.top-header__item .right-content ul li:hover a {
+  color: var(--tp-common-orange);
+}
+.top-header__item .right-content ul li a {
+  color: #272f40;
+  padding: 16px;
+  display: inline-block;
+}
+
+.header {
+  background: var(--tp-common-header-bg);
+}
+.header__menu ul li {
+  margin-right: 32px;
+}
+.header__menu ul li:hover a {
+  color: var(--tp-common-orange);
+}
+.header__menu ul li a {
+  padding: 32px 0;
+  color: var(--tp-common-white);
+  display: inline-block;
+}
+
 /*----------------------------------------*/
 /*  03. MEAN MENU CSS START
 /*----------------------------------------*/
@@ -925,6 +994,7 @@ input[type=color] {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: -0.36px;
+  width: 90%;
 }
 .hero .h_100vh {
   height: 90vh;
